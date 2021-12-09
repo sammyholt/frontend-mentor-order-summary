@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="bg-mobile md:bg-desktop bg-no-repeat bg-contain flex justify-center items-center h-screen w-screen p-5 bg-primary-pale">
+    <OrderSummary price="59.99"/>
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import OrderSummary from './components/OrderSummary.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    OrderSummary
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
